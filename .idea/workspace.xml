@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255b86c5-da36-408e-9adc-d1513dfba18b" name="Default Changelist" comment="" />
+    <list default="true" id="255b86c5-da36-408e-9adc-d1513dfba18b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/wordJson/label2idx.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/wordJson/word2idx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myTextClassifier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myTextClassifier.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adversarialLSTM/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/adversarialLSTM/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adversarialLSTM/DataSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/adversarialLSTM/DataSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adversarialLSTM/MetricsMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/adversarialLSTM/MetricsMethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adversarialLSTM/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/adversarialLSTM/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adversarialLSTM/dataDealer.py" beforeDir="false" afterPath="$PROJECT_DIR$/adversarialLSTM/dataDealer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +20,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/textClassifier$dataDealer.coverage" NAME="dataDealer Coverage Results" MODIFIED="1577092299127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adversarialLSTM" />
+    <SUITE FILE_PATH="coverage/textClassifier$DataSet.coverage" NAME="DataSet Coverage Results" MODIFIED="1577167669522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adversarialLSTM" />
+    <SUITE FILE_PATH="coverage/textClassifier$Config.coverage" NAME="Config Coverage Results" MODIFIED="1577158806092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adversarialLSTM" />
     <SUITE FILE_PATH="coverage/myTextClassifier$dataDealer.coverage" NAME="dataDealer Coverage Results" MODIFIED="1577072175718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adversarialLSTM" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -53,12 +65,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="english" value="1" />
+          <entry key="json" value="2" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="5847" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="5847" />
         </counts>
       </usages-collector>
     </session>
@@ -66,26 +92,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adversarialLSTM/DataSet.py">
+        <entry file="file://$PROJECT_DIR$/adversarialLSTM/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="550">
+              <caret line="37" column="48" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="48" />
               <folding>
-                <marker date="1577072528085" expanded="true" signature="46:51" ph="..." />
+                <element signature="e#22#45#0" expanded="true" />
+                <marker date="1577187955962" expanded="true" signature="115:2770" ph="..." />
+                <marker date="1577187955962" expanded="true" signature="202:211" ph="..." />
+                <marker date="1577187955962" expanded="true" signature="202:470" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adversarialLSTM/dataDealer.py">
+        <entry file="file://$PROJECT_DIR$/adversarialLSTM/MetricsMethods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="383">
+              <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
               <folding>
-                <element signature="e#23#42#0" expanded="true" />
-                <marker date="1577092297814" expanded="true" signature="674:707" ph="..." />
-                <marker date="1577092297814" expanded="true" signature="834:1303" ph="..." />
+                <marker date="1577255103562" expanded="true" signature="82:87" ph="..." />
+                <marker date="1577255103562" expanded="true" signature="307:1053" ph="..." />
+                <marker date="1577255103562" expanded="true" signature="1476:1844" ph="..." />
+                <marker date="1577255103562" expanded="true" signature="1930:1935" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,10 +124,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adversarialLSTM/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="308">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
               <folding>
-                <marker date="1577090936364" expanded="true" signature="51:56" ph="..." />
+                <marker date="1577158904644" expanded="true" signature="51:56" ph="..." />
               </folding>
             </state>
           </provider>
@@ -112,15 +142,23 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>embeddingSize</find>
+      <find>zip</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/adversarialLSTM/DataSet.py" />
-        <option value="$PROJECT_DIR$/adversarialLSTM/Config.py" />
         <option value="$PROJECT_DIR$/adversarialLSTM/dataDealer.py" />
+        <option value="$PROJECT_DIR$/adversarialLSTM/Config.py" />
+        <option value="$PROJECT_DIR$/adversarialLSTM/DataSet.py" />
+        <option value="$PROJECT_DIR$/adversarialLSTM/Model.py" />
+        <option value="$PROJECT_DIR$/adversarialLSTM/MetricsMethods.py" />
       </list>
     </option>
   </component>
@@ -157,6 +195,18 @@
               <item name="textClassifier" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="textClassifier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textClassifier" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="rawdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textClassifier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textClassifier" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="wordJson" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,10 +218,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyCode\mygit\textClassifier\data" />
       <recent name="F:\MyCode\myTextClassifier\data\rawdata" />
     </key>
   </component>
@@ -187,7 +238,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.DataSet">
+    <configuration name="Config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myTextClassifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adversarialLSTM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adversarialLSTM/Config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DataSet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myTextClassifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adversarialLSTM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adversarialLSTM/DataSet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dataDealer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myTextClassifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,8 +305,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.dataDealer" />
+      <item itemvalue="Python.DataSet" />
+      <item itemvalue="Python.Config" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DataSet" />
+        <item itemvalue="Python.Config" />
         <item itemvalue="Python.dataDealer" />
       </list>
     </recent_temporary>
@@ -233,13 +335,13 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16066837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11246786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24528302" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36032388" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23616734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -268,34 +370,77 @@
         <state relative-caret-position="-198" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adversarialLSTM/Config.py">
+    <entry file="file://D:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/utils_any2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="458">
+          <caret line="309" column="72" selection-start-line="309" selection-start-column="66" selection-end-line="309" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/english">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/wordJson/word2idx.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/wordJson/label2idx.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adversarialLSTM/dataDealer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
-            <marker date="1577090936364" expanded="true" signature="51:56" ph="..." />
+            <element signature="e#23#42#0" expanded="true" />
+            <marker date="1577093495337" expanded="true" signature="674:707" ph="..." />
+            <marker date="1577093495337" expanded="true" signature="834:1304" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adversarialLSTM/DataSet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="704">
+          <caret line="190" column="54" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
           <folding>
-            <marker date="1577072528085" expanded="true" signature="46:51" ph="..." />
+            <element signature="e#23#42#0" expanded="true" />
+            <marker date="1577168383300" expanded="true" signature="2421:2430" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adversarialLSTM/dataDealer.py">
+    <entry file="file://$PROJECT_DIR$/adversarialLSTM/Config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="308">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="e#23#42#0" expanded="true" />
-            <marker date="1577092297814" expanded="true" signature="674:707" ph="..." />
-            <marker date="1577092297814" expanded="true" signature="834:1303" ph="..." />
+            <marker date="1577158904644" expanded="true" signature="51:56" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adversarialLSTM/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="e#22#45#0" expanded="true" />
+            <marker date="1577187955962" expanded="true" signature="115:2770" ph="..." />
+            <marker date="1577187955962" expanded="true" signature="202:211" ph="..." />
+            <marker date="1577187955962" expanded="true" signature="202:470" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adversarialLSTM/MetricsMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
+          <folding>
+            <marker date="1577255103562" expanded="true" signature="82:87" ph="..." />
+            <marker date="1577255103562" expanded="true" signature="307:1053" ph="..." />
+            <marker date="1577255103562" expanded="true" signature="1476:1844" ph="..." />
+            <marker date="1577255103562" expanded="true" signature="1930:1935" ph="..." />
           </folding>
         </state>
       </provider>

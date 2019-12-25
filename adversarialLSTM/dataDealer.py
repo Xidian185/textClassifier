@@ -33,9 +33,9 @@ def removeSen(sSen):
 labedP["review"] = labedP["review"].apply(removeSen)
 unlabedP["review"] = unlabedP["review"].apply(removeSen)
 
-print(labedP.head())
+#print(labedP.head())
 
-# wordLines = pd.concat([labedP["review"], unlabedP["review"]], axis=0)
-# wordLines.to_csv(r"..\data\preProcessed\wordLines.txt", index=False)
-# labedP.to_csv(r"..\data\preProcessed\labeledData.csv", index=False)
-# unlabedP.to_csv(r"..\data\preProcessed\unlabeledData.csv", index=False)
+wordLines = pd.concat([labedP["review"], unlabedP["review"]], axis=0)
+wordLines.to_csv(r"..\data\preProcessed\wordLines.txt", index=False)
+labedP.to_csv(r"..\data\preProcessed\labeledData.csv", index=False)
+unlabedP.to_csv(r"..\data\preProcessed\unlabeledData.csv", index=False)
