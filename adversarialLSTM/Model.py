@@ -21,7 +21,7 @@ class AdversarialBiLSTM(object):
             # 利用词频计算新的词嵌入矩阵
             normWordEmbedding = self._normalize(tf.cast(wordEmbedding, tf.float32, name="word2vec"), weights)
             # 利用词嵌入矩阵将输入的数据中的词转换成词向量，维度[batch_size, sequence_length, embedding_size]
-            self.embeddedWords = tf.nn.embedding_lookup(normWordEmbedding, self.X)
+            self.embeddedWords = tf.nn.embedding_lookup(normWordEmbedding, self.inputX)
 
         # 计算二元交叉熵损失
         with tf.name_scope("loss"):
@@ -99,7 +99,7 @@ class AdversarialBiLSTM(object):
         newM = tf.matmul(tf.reshape(M, [-1, hidden_size]), tf.reshape(W, [-1, 1]))
 
         # 对newM做维度转换成[batch_size, sequenceLength]
-        restoreM = tf.reshape(newM, [-1, hidden_size])
+        restoreM = tf.reshape(newM, [-1, self.config.sequenceLength])
 
         # 用softmax做归一化处理[batch_size, sequenceLength]
         softM = tf.nn.softmax(restoreM)

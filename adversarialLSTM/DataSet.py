@@ -4,21 +4,20 @@ import numpy as np
 from collections import Counter
 import gensim
 import json
-
-from Config import *
+import os
 
 
 # 用于生成测试集和训练集
 class DataSet(object):
     def __init__(self, cfg):
         self.config = cfg
-        self._dataSource = config.dataSource
-        self._stopWordSource = config.stopWordSource
+        self._dataSource = self.config.dataSource
+        self._stopWordSource = self.config.stopWordSource
 
-        self._sequenceLength = config.sequenceLength
-        self._embeddingSize = config.model.embeddingSize
-        self._batchSize = config.batchSize
-        self._rate = config.rate
+        self._sequenceLength = self.config.sequenceLength
+        self._embeddingSize = self.config.model.embeddingSize
+        self._batchSize = self.config.batchSize
+        self._rate = self.config.rate
 
         self._stopWordDict = {}
         self.trainViews = []
@@ -77,7 +76,7 @@ class DataSet(object):
         trainLabels = np.asarray(y[:trainIndex], dtype="float32")
 
         evalReviews = np.asarray(reviews[trainIndex:], dtype="int64")
-        evalLabels = np.asarray(reviews[trainIndex:], dtype="float32")
+        evalLabels = np.asarray(y[trainIndex:], dtype="float32")
 
         return trainReviews, trainLabels, evalReviews, evalLabels
 
@@ -104,12 +103,13 @@ class DataSet(object):
         label2index = dict(zip(labelList, range(len(labelList))))
         self.labelList = list(range(len(labelList)))  # 从0开始标记label
 
-        # 将词汇-索引映射表保存为json数据，之后做inference时直接加载来处理数据
-        with open("../data/wordJson/word2idx.json", "w", encoding="utf-8") as fw:
-            json.dump(word2index, fw)
-
-        with open("../data/wordJson/label2idx.json", "w", encoding="utf-8") as fl:
-            json.dump(label2index, fl)
+        # 将词汇-索引映射表保存为json数据，之后做inference时直接加载来处理数据.（如果已经存在了就不保存了）
+        if not os.path.exists("../data/wordJson/word2idx.json"):
+            with open("../data/wordJson/word2idx.json", "w", encoding="utf-8") as fw:
+                json.dump(word2index, fw)
+        if not os.path.exists("../data/wordJson/label2idx.json"):
+            with open("../data/wordJson/label2idx.json", "w", encoding="utf-8") as fl:
+                json.dump(label2index, fl)
 
         return word2index, label2index
 
@@ -193,6 +193,6 @@ class DataSet(object):
             yield batchx, batchy
 
 
-config = Config()
-dataSet = DataSet(config)
-dataSet.dataGen()
+# config = Config()
+# dataSet = DataSet(config)
+# dataSet.dataGen()
